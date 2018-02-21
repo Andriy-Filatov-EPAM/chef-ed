@@ -1,0 +1,5 @@
+CREATE DATABASE app;
+GRANT ALL PRIVILEGES ON app.* to 'app_user'@'%' IDENTIFIED BY '<%=@userpass%>';
+USE app;
+CREATE TABLE `test` (`id` INT(11) NULL,	`text` TEXT(50) NULL);
+INSERT INTO `app`.`test` (`id`,`text`) VALUES ('1','test string');
